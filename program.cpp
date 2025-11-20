@@ -14,5 +14,6 @@ int main() {
     // Calculation
     int Age = CurrentYear - BirthYear;
 
+    cout << "====RESULT====" << endl;
     cout << "Your age: " << Age << endl;
 }
