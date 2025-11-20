@@ -7,13 +7,17 @@ int main() {
 
     cout << "What is your birthday year?: ";
     cin >> BirthYear;
+    if (BirthYear < 1900) {
+        cout << "Wrong birth year!" << endl;
+        return 1;
+    } else {
+        cout << "What is current year?: ";
+        cin >> CurrentYear;
 
-    cout << "What is current year?: ";
-    cin >> CurrentYear;
+        // Calculation
+        int Age = CurrentYear - BirthYear;
 
-    // Calculation
-    int Age = CurrentYear - BirthYear;
-
-    cout << "====RESULT====" << endl;
-    cout << "Your age: " << Age << endl;
+        cout << "====RESULT====" << endl;
+        cout << "Your age: " << Age << endl;
+    }
 }
