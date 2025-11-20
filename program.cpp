@@ -11,7 +11,7 @@ int main() {
     cout << "What is current year?: ";
     cin >> CurrentYear;
 
-    // calculation
+    // Calculation
     int Age = CurrentYear - BirthYear;
 
     cout << "Your age: " << Age << endl;
