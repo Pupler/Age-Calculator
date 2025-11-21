@@ -7,12 +7,28 @@ int main() {
 
     cout << "What is your birthday year?: ";
     cin >> BirthYear;
+
+    if (cin.fail()) {
+        cout << "Error occured!" << endl;
+        cin.clear();
+        cin.ignore(1000, '\n');
+        return 1;
+    }
+
+
     if (BirthYear < 1900) {
         cout << "Wrong birth year!" << endl;
         return 1;
     } else {
         cout << "What is current year?: ";
         cin >> CurrentYear;
+
+        if (cin.fail()) {
+            cout << "Error occured!" << endl;
+            cin.clear();
+            cin.ignore(1000, '\n');
+            return 1;
+        }
 
         // Calculation
         int Age = CurrentYear - BirthYear;
