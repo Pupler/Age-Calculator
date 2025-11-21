@@ -31,9 +31,13 @@ int main() {
         }
 
         // Calculation
-        int Age = CurrentYear - BirthYear;
+        if (BirthYear <= CurrentYear) {
+            int Age = CurrentYear - BirthYear;
 
-        cout << "====RESULT====" << endl;
-        cout << "Your age: " << Age << endl;
+            cout << "====RESULT====" << endl;
+            cout << "Your age: " << Age << endl;
+        } else {
+            cout << "Error: Birth year cannot be in the future!" << endl;
+        }
     }
 }
