@@ -7,4 +7,15 @@ Simple program written with C++ that can calculate your age
 - Date validation
 - Simple console interface
 
-## Getting started
+## 🚀 Getting started
+```bash
+# Clone the repository
+git clone https://github.com/Pupler/Age-Calculator.git
+cd Age-Calculator
+
+# Build with CMake
+g++ program.cpp -o program
+
+# Run the calculator
+./program
+```
